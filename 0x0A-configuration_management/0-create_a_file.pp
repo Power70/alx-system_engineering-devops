@@ -1,8 +1,9 @@
 # this script creat a file using puppet
 file { '/tmp/school':
-  ensure => file,
-  mode => '0744',
-  owner => 'www-data',
-  group = > 'www-data',
+  ensure  => file,
+  owner   => 'www-data',
+  group   => 'www-data',
+  mode    => '0744',
   content => 'I love Puppet',
 }
+
